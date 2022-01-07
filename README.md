@@ -80,7 +80,14 @@ With the required body:
 ```
 Response:
 ```
-
+{
+  "title": "Lovely tea",
+  "price": 5,
+  "status": "active",
+  "frequency": "Monthly",
+  "customer_id": 1,
+  "tea_id": 1
+  }
 ```
 
 `PATCH /api/v1/customers/:customer_id/subscriptions/:id`

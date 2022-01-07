@@ -28,7 +28,7 @@ Testing is done with [RSpec](https://rspec.info/) with coverage details provided
 
 ### Database Design
 
-![database_schema](https://user-images.githubusercontent.com/83885722/148540022-deded56a-75d0-41bb-84c2-7ac01aa605c4.png)
+![database_schema](https://user-images.githubusercontent.com/83885722/148582056-c45eb205-88fc-48af-8bb7-e0d86100b21a.png)
 
 ### Endpoints
 

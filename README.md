@@ -1,5 +1,8 @@
 ## Tea Subscription API
-This is a REST API for a tea subscription service.
+This is a REST API for a tea subscription service to:
+- View a customer's active and cancelled subscriptions
+- Create a tea subscription for a customer
+- Cancel a subscription
 
 ### Primary Technologies
 

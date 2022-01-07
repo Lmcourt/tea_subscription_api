@@ -36,22 +36,24 @@ describe 'subscriptions api' do
     end
   end
 
-  it 'subscribes a customer to a tea subscription' do
-    customer = create(:customer)
-    tea = create(:tea)
-    subscription_params = {
-      title: "Lovely tea",
-      price: 5,
-      status: "active",
-      frequency: "Monthly",
-      customer_id: customer.id,
-      tea_id: tea.id
-      }
+  describe 'creating subscription to a tea' do
+    it 'subscribes a customer to a tea subscription' do
+      customer = create(:customer)
+      tea = create(:tea)
+      subscription_params = {
+        title: "Lovely tea",
+        price: 5,
+        status: "active",
+        frequency: "Monthly",
+        customer_id: customer.id,
+        tea_id: tea.id
+        }
 
-    post "/api/v1/customers/#{customer.id}/subscriptions",
-    params: subscription_params
+      post "/api/v1/customers/#{customer.id}/subscriptions",
+      params: subscription_params
 
-    expect(response).to be_successful
+      expect(response).to be_successful
+    end
   end
 
   describe 'canceling a subscription' do
